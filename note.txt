@@ -1,0 +1,20 @@
+"""
+> create secret code bet github and dockerhub.
+> docker build .         // run after create dockerfile
+> docker-compose build   // run after create docker-compose
+
+> linting: tool to check code formatting
+    > highlights errors, typos, formatting issues
+    Handling linting:
+    > install flake8
+    > run it through docker compose
+    > docker-compose run --rm app sh -c 'flake8'
+    > solve errors from bottom to typos
+> testing:
+    > Django test suite
+    > setup test per Django app
+    > docker-compose run --rm app sh -c 'python manage.py test'
+
+> flake8 configuration:
+    docker-compose run --rm app /bin/sh -c '/py/bin/flake8 /app'
+"""
